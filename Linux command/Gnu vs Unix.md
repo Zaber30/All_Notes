@@ -1,0 +1,1 @@
+==**GNU** is a free software project and operating system designed as a compatible, open-source clone of Unix==. **Unix**, on the other hand, is a proprietary, monolithic operating system created in the 1960s. Today, GNU tools commonly run on top of the Linux kernel (forming GNU/Linux), whereas Unix remains rooted in commercial enterprise environments.
