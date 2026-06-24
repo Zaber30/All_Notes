@@ -1,4 +1,4 @@
-# Socket vs WebSocket (Networking Notes)
+# Socket vs Web Socket (Networking)
 
 ---
 
