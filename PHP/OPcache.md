@@ -1,0 +1,1 @@
+**OPcache (Opcode Cache)** is a PHP extension that improves PHP performance by storing the compiled PHP instructions (**opcode**) in memory so PHP does not need to compile the same PHP files again and again.
