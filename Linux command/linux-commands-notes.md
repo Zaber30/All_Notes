@@ -43,17 +43,17 @@ A complete reference of Linux commands with descriptions, grouped by category an
 
 ## 2. File Permissions & Ownership
 
-| Command | Description |
-|---|---|
-| `chmod 755 <file>` | Change file permissions (numeric) |
-| `chmod +x <file>` | Make file executable |
-| `chmod -R 755 <dir>` | Recursively change permissions |
-| `chown user:group <file>` | Change file owner and group |
-| `chown -R user:group <dir>` | Recursively change ownership |
-| `umask` | Show/set default permission mask |
-| `ls -l` | View permissions (`rwxr-xr-x` format) |
-| `getfacl <file>` | Show Access Control List (ACL) |
-| `setfacl -m u:user:rwx <file>` | Set ACL for a specific user |
+| Command                        | Description                           |
+| ------------------------------ | ------------------------------------- |
+| `chmod 755 <file>`             | Change file permissions (numeric)     |
+| `chmod +x <file>`              | Make file executable                  |
+| `chmod -R 755 <dir>`           | Recursively change permissions        |
+| `chown user:group <file>`      | Change file owner and group           |
+| `chown -R user:group <dir>`    | Recursively change ownership          |
+| `umask`                        | Show/set default permission mask      |
+| `ls -l`                        | View permissions (`rwxr-xr-x` format) |
+| `getfacl <file>`               | Show Access Control List (ACL)        |
+| `setfacl -m u:user:rwx <file>` | Set ACL for a specific user           |
 
 **Permission basics:** `r` = read (4), `w` = write (2), `x` = execute (1). Format: `chmod [owner][group][others]`.
 
@@ -107,29 +107,29 @@ A complete reference of Linux commands with descriptions, grouped by category an
 
 ## 5. Process Management
 
-| Command | Description |
-|---|---|
-| `ps` | Show running processes for current shell |
-| `ps aux` | Show all running processes (detailed) |
-| `ps -ef` | Show all processes (full format) |
-| `top` | Real-time process monitor |
-| `htop` | Enhanced interactive process viewer (may need install) |
-| `kill <pid>` | Terminate process by PID |
-| `kill -9 <pid>` | Force kill a process |
-| `killall <name>` | Kill all processes by name |
-| `pkill <name>` | Kill process(es) matching name |
-| `bg` | Resume a job in background |
-| `fg` | Bring background job to foreground |
-| `jobs` | List background jobs |
-| `nohup <cmd> &` | Run command immune to hangups, in background |
-| `nice -n 10 <cmd>` | Run command with adjusted priority |
-| `renice 10 -p <pid>` | Change priority of running process |
-| `pgrep <name>` | Find PID by process name |
-| `pstree` | Show process tree |
-| `disown` | Remove job from shell's job table |
-| `&` (suffix) | Run command in background |
-| `Ctrl+Z` | Suspend current foreground process |
-| `Ctrl+C` | Terminate current foreground process |
+| Command              | Description                                            |
+| -------------------- | ------------------------------------------------------ |
+| `ps`                 | Show running processes for current shell               |
+| `ps aux`             | Show all running processes (detailed)                  |
+| `ps -ef`             | Show all processes (full format)                       |
+| `top`                | Real-time process monitor                              |
+| `htop`               | Enhanced interactive process viewer (may need install) |
+| `kill <pid>`         | Terminate process by PID                               |
+| `kill -9 <pid>`      | Force kill a process                                   |
+| `killall <name>`     | Kill all processes by name                             |
+| `pkill <name>`       | Kill process(es) matching name                         |
+| `bg`                 | Resume a job in background                             |
+| `fg`                 | Bring background job to foreground                     |
+| `jobs`               | List background jobs                                   |
+| `nohup <cmd> &`      | Run command immune to hangups, in background           |
+| `nice -n 10 <cmd>`   | Run command with adjusted priority                     |
+| `renice 10 -p <pid>` | Change priority of running process                     |
+| `pgrep <name>`       | Find PID by process name                               |
+| `pstree`             | Show process tree                                      |
+| `disown`             | Remove job from shell's job table                      |
+| `&` (suffix)         | Run command in background                              |
+| `Ctrl+Z`             | Suspend current foreground process                     |
+| `Ctrl+C`             | Terminate current foreground process                   |
 
 ---
 

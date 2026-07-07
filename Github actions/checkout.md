@@ -1,0 +1,1 @@
+In GitHub Actions, **checkout code** means downloading your repository code from GitHub into the temporary machine (runner) where the workflow is running.
