@@ -15,7 +15,7 @@ These commands manage containers that **already exist** on your computer so you 
 
 These commands help you see what is running and clean up wasted disk space. 
 
-The absolute **main commands** of Docker are grouped into ==**13 high-level Management Commands** (the nouns) and **10 Everyday Action Commands** (the verbs)==.
+The absolute **main commands** of Docker are grouped into 13 high-level Management Commands (the nouns) and 10 Everyday Action Commands (the verbs).
 
 While Docker has hundreds of commands, you only need to know these core commands to do 99% of your work.
 

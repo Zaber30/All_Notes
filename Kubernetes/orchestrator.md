@@ -1,0 +1,1 @@
+orchestrator is the software system that automatically manages, deploys, and scales applications across those nodes.

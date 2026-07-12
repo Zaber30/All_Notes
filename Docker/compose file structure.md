@@ -95,28 +95,28 @@ secrets:                   # Top-level key (Optional)
 
 # Line Types Summary
 
-|YAML Line|Official Name|Description|
-|---|---|---|
-|`services:`|Top-level key|Groups all services (containers).|
-|`web:`|Service name (Service identifier)|Logical name of a container.|
-|`image:`|Service option|Specifies the Docker image.|
-|`build:`|Service option|Builds an image from a Dockerfile.|
-|`container_name:`|Service option|Sets a custom container name.|
-|`ports:`|Service option|Declares port mappings.|
-|`- "80:80"`|List item (Port mapping)|Maps the host port to the container port.|
-|`volumes:`|Service option|Mounts storage into the container.|
-|`- ./host:/container`|List item (Volume mount)|Mounts a host path or a named volume into the container.|
-|`environment:`|Service option|Declares environment variables.|
-|`APP_ENV: production`|Environment variable (Key-value pair)|Defines an environment variable inside the container.|
-|`depends_on:`|Service option|Defines service startup dependencies.|
-|`- db`|List item (Dependency)|References another service that should start first.|
-|`networks:` (inside a service)|Service option|Connects a service to one or more networks.|
-|`- app-network`|List item (Network reference)|Connects the service to a network.|
-|`restart:`|Service option (Restart policy)|Controls when Docker automatically restarts the container.|
-|`volumes:` (root level)|Top-level key|Defines Docker-managed named volumes.|
-|`db-data:`|Named volume|Persistent storage managed by Docker.|
-|`networks:` (root level)|Top-level key|Defines custom Docker networks.|
-|`app-network:`|Network name|Name of the custom Docker network.|
-|`driver:`|Network option|Specifies the network driver (e.g., `bridge`).|
-|`configs:`|Top-level key|Defines configuration objects that services can use.|
-|`secrets:`|Top-level key|Defines secret objects for sensitive data such as passwords and API keys.|
+| YAML Line                      | Official Name                         | Description                                                               |
+| ------------------------------ | ------------------------------------- | ------------------------------------------------------------------------- |
+| `services:`                    | Top-level key                         | Groups all services (containers).                                         |
+| `web:`                         | Service name (Service identifier)     | Logical name of a container.                                              |
+| `image:`                       | Service option                        | Specifies the Docker image.                                               |
+| `build:`                       | Service option                        | Builds an image from a Dockerfile.                                        |
+| `container_name:`              | Service option                        | Sets a custom container name.                                             |
+| `ports:`                       | Service option                        | Declares port mappings.                                                   |
+| `- "80:80"`                    | List item (Port mapping)              | Maps the host port to the container port.                                 |
+| `volumes:`                     | Service option                        | Mounts storage into the container.                                        |
+| `- ./host:/container`          | List item (Volume mount)              | Mounts a host path or a named volume into the container.                  |
+| `environment:`                 | Service option                        | Declares environment variables.                                           |
+| `APP_ENV: production`          | Environment variable (Key-value pair) | Defines an environment variable inside the container.                     |
+| `depends_on:`                  | Service option                        | Defines service startup dependencies.                                     |
+| `- db`                         | List item (Dependency)                | References another service that should start first.                       |
+| `networks:` (inside a service) | Service option                        | Connects a service to one or more networks.                               |
+| `- app-network`                | List item (Network reference)         | Connects the service to a network.                                        |
+| `restart:`                     | Service option (Restart policy)       | Controls when Docker automatically restarts the container.                |
+| `volumes:` (root level)        | Top-level key                         | Defines Docker-managed named volumes.                                     |
+| `db-data:`                     | Named volume                          | Persistent storage managed by Docker.                                     |
+| `networks:` (root level)       | Top-level key                         | Defines custom Docker networks.                                           |
+| `app-network:`                 | Network name                          | Name of the custom Docker network.                                        |
+| `driver:`                      | Network option                        | Specifies the network driver (e.g., `bridge`).                            |
+| `configs:`                     | Top-level key                         | Defines configuration objects that services can use.                      |
+| `secrets:`                     | Top-level key                         | Defines secret objects for sensitive data such as passwords and API keys. |

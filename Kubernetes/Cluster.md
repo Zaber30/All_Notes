@@ -1,0 +1,1 @@
+A **cluster** is a group of physical computers (servers/nodes) connected to work together as a single system

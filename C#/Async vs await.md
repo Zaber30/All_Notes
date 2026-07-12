@@ -1,0 +1,2 @@
+**`async`**: This is just a warning label you put on top of a method. It tells the C# compiler: "Hey, look inside this method. I am going to use the `await` pause-button somewhere in here."
+**`await`**: This is the actual action. It means: _"This specific line of code is going to take a long time (like downloading a file or waiting for a timer). **Pause this method right here, free up the thread to do other work, and come back here when the task is done.**"_ 
