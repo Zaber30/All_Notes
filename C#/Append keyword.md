@@ -1,0 +1,1 @@
+Yes, both `IEnumerable<T>` and `StringBuilder` utilize the `Append` concept in C#, but they behave very differently. Note that the correct syntax is **`Append`** (without the 't' at the end). 

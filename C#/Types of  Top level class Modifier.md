@@ -19,3 +19,70 @@ Access Modifier
 - **Scope:** Current Project Only (Assembly Bound).
 - **Who can see it:** Only code written inside the exact same compiled project (the same `.dll` or `.exe` file). To any outside project, this class is completely invisible.
 - **When to use it:** Use this for "behind-the-scenes" worker classes, database helpers, or internal utilities that the rest of your system relies on, but external projects have no business touching.
+
+
+# Summary
+
+|Keyword|Type|Purpose|
+|---|---|---|
+|`public`|Access modifier|Accessible from anywhere|
+|`internal`|Access modifier|Accessible only within the assembly|
+|`sealed`|Class modifier|Cannot be inherited|
+|`abstract`|Class modifier|Cannot be instantiated directly|
+|`static`|Class modifier|Contains only static members|
+|`partial`|Class modifier|Split class across multiple files|
+|`unsafe`|Class modifier|Allows unsafe code|
+
+---
+
+## Easy way to remember
+
+A class declaration generally follows this pattern:
+
+```
+[Access Modifier] [Class Modifier(s)] class ClassName
+```
+
+Example:
+
+```
+public sealed class Person
+```
+
+- `public` → **Who can access the class?** (Access modifier)
+- `sealed` → **How does the class behave?** (Class modifier)
+- `class` → Declares that it's a class.
+- `Person` → The class name.
+# Access Modifier Comparison
+
+| Modifier   | Same Class | Same Project | Other Project |
+| ---------- | ---------- | ------------ | ------------- |
+| `private`  | ✅          | ❌            | ❌             |
+| `public`   | ✅          | ✅            | ✅             |
+| `internal` | ✅          | ✅            | ❌             |
+## Summary
+
+|Modifier|Valid?|Meaning|
+|---|---|---|
+|`public`|✅|Everyone can access|
+|`internal`|✅|Same assembly only|
+|`public internal`|❌|**Invalid syntax**|
+|`protected internal`|✅|`protected` **OR** `internal`|
+|`private protected`|✅|`protected` **AND** `internal`|
+### Solution vs Project vs Assembly
+
+```
+Solution
+│
+├── Project A (Assembly A)
+│
+├── Project B (Assembly B)
+│
+└── Project C (Assembly C)
+```
+
+Normally:
+
+- **Solution** = Container for projects.
+- **Project** = Compiles into an **assembly** (`.dll` or `.exe`).
+- **Assembly** = The boundary used by `internal`.
