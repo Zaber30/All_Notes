@@ -6,10 +6,10 @@
 
 An array is the **most primitive collection** — a single fixed-size, contiguous block of memory. Everything about its performance comes from two facts:
 
-|Fact|Why it matters|
-|---|---|
-|**Fixed size, set at creation**|You can never "add" or "remove" — resizing means creating a whole new array and copying everything (O(n))|
-|**Contiguous memory + known element size**|Any index can be reached instantly via `base_address + (index * element_size)` — no searching needed|
+| Fact                                       | Why it matters                                                                                            |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| **Fixed size, set at creation**            | You can never "add" or "remove" — resizing means creating a whole new array and copying everything (O(n)) |
+| **Contiguous memory + known element size** | Any index can be reached instantly via `base_address + (index * element_size)` — no searching needed      |
 
 Because of this, arrays are either **the fastest possible option** (direct indexing) or **the most expensive option** (any operation that implies resizing), with nothing in between.
 

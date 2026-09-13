@@ -1,0 +1,1 @@
+In software, **overhead** is the extra computer memory (**RAM**), processing power (**CPU**), or time required to manage and support a task, rather than to store the actual data itself.

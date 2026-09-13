@@ -1,0 +1,1 @@
+**throughput** is simply how much work a server can get done in one second.

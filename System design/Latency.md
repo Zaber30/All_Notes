@@ -1,0 +1,1 @@
+the time delay between a user action and the response from a system, or the time it takes for data to travel from its source to a destination and back.

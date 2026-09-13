@@ -1,0 +1,1 @@
+a **throttle** (or throttling) is the intentional slowing down or restriction of a process, data flow, or request rate

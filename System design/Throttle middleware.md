@@ -1,0 +1,1 @@
+**Throttle middleware** is a software component that sits between a web server and application logic to limit the number of incoming requests a user or client can make within a specific time window

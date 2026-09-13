@@ -1,0 +1,1 @@
+- - _Act as a Principal PHP Engineer. Analyze this Laravel core class. Explain its primary responsibility, its design patterns, and how it interacts with the rest of the framework in 3 bullet points."_

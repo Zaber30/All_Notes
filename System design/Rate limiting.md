@@ -1,0 +1,1 @@
+**Rate limiting** is a network management technique used to control the rate of incoming or outgoing traffic by limiting how many requests a user or client can make within a specified timeframe.

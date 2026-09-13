@@ -1,0 +1,1 @@
+**Virtual address space** is the range of memory addresses that a **process is allowed to use from its point of view**.

@@ -1,0 +1,2 @@
+Your application is ready to do more work, but the CPU cannot process it fast enough.
+CPU bottleneck isn't simply "CPU is at 100%." It means CPU capacity is preventing the application from achieving the required performance.
