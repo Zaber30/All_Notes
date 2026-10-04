@@ -1,0 +1,1 @@
+scope mane kono akta line a kono akta variable or function i can access

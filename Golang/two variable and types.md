@@ -1,0 +1,1 @@
+variable mane hocce container mane kono kico rakha jai

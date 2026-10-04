@@ -1,1 +1,1 @@
-A memory leak is ==a software problem where a program asks the computer for working memory (**RAM**) to do a task, but forgets to give it back when it is done==.
+A memory leak is a software problem where a program asks the computer for working memory (**RAM**) to do a task, but forgets to give it back when it is done.
